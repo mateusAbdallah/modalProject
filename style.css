@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --clr-white: #fff
+}
+
+.image {
+    width: 100vw;
+    height: 100vh;
+    background: url(./headerBackgroundImage.jpg) center/cover no-repeat;
+}
+
+div {
+    width: 20vw;
+    background: var(--clr-white);
+    text-align: center;
+    border-radius: 0.5rem;
+    margin: 0 auto; 
+}
