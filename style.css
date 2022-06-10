@@ -14,9 +14,10 @@
     background: url(./headerBackgroundImage.jpg) center/cover no-repeat;
 }
 
-div {
-    width: 20vw;
+.banner {
     background: var(--clr-white);
+    width: 45vw;
+    height: 30vh;
     text-align: center;
     border-radius: 0.5rem;
     margin: 0 auto; 
