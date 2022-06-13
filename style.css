@@ -34,27 +34,20 @@ body {
 }
 
 .btn {
-    width: 7rem;
+    width: 10rem;
     height: 3rem;
     text-transform: uppercase;
-    background-color: lightblue;
+    background-color: rgb(223, 173, 230);
     border: none;
-    border-radius: 3px;
-    color: white;
+    border-radius: 5px;
+    color: var(--clr-white);
+    font-size: 20px;
+    font-weight: bold;
 }
 
-/*.image {
-    width: 100vw;
-    height: 100vh;
-    background: url(./headerBackgroundImage.jpg) center/cover no-repeat;
+.btn:hover {
+    background-color: var(--clr-white);
+    cursor: pointer;
+    border: 2px solid blue;
+    color: blueviolet;
 }
-
-.banner {
-    background: var(--clr-white);
-    width: 45vw;
-    height: 30vh;
-    text-align: center;
-    border-radius: 0.5rem;
-    
-}
-*/
