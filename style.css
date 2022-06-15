@@ -7,15 +7,116 @@
 }
 
 :root {
-    --clr-white: #fff
+    --clr-white: #fff;
+    --transition: all 0.3s linear;
+    --fixed-width: 620px;
+    --ff: Arial, Helvetica, sans-serif;
 }
 
+/*
 body {
     background: url(./headerBackgroundImage.jpg) center/cover no-repeat;
     width: 100vw;
     height: 100vh;
 }
+*/
 
+.image {
+    min-height: 100vh;
+    background: url(./headerBackgroundImage.jpg) center/cover no-repeat;
+    display: grid;
+    place-items: center;
+}
+
+.container {
+    background: var(--clr-white);
+    padding: 4rem 0;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90vw;
+    max-width: var(--fixed-width);
+    font-family: var(--ff)
+}
+
+.btn {
+    text-transform: uppercase;
+    background: transparent;
+    display: inline-block;
+    font-size: 0.9rem;
+    border: 2px solid black;
+    cursor: pointer;
+    border-radius: 5px;
+    letter-spacing: 0.25rem;
+}
+
+.modal-btn {
+    margin-top: 2rem;
+    background: lightskyblue;
+    border-color: lightskyblue;
+    color: white;
+    font-size: 20px;
+}
+
+.modal-btn:hover {
+    background-color: var(--clr-white);
+    cursor: pointer;
+    border: 2px solid lightsteelblue;
+    color: lightskyblue;    
+}
+
+.modal-overlay {
+    display: grid;
+    place-items: center;
+    transition: var(--transition);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(73, 166, 233, 0.5);
+    visibility: hidden;
+    z-index: -10;
+}
+
+/*Open and close modal*/
+
+.open-modal {
+    visibility: visible;
+    z-index: 10;
+}
+
+.modal-container {
+    background: white;
+    border-radius: 5px;
+    width: 90vw;
+    height: 30vh;
+    max-width: var(--fixed-width);
+    text-align: center;
+    display: grid;
+    place-items: center;
+    position: relative;
+    font-family: var(--ff);
+}
+
+.close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+    background: transparent;
+    border-color: transparent;
+    color: darkred;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.close-btn:hover {
+    transform: scale(1.3);
+    color: red;
+}
+
+/*
 .container {
     text-align: center;
     padding: 5rem;
@@ -51,3 +152,18 @@ body {
     border: 2px solid blue;
     color: lightskyblue;
 }
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(73, 166, 233, 0.5);
+    display: grid;
+    place-items: center;
+    transition: var(--transition);
+    visibility: hidden;
+    z-index: -10;
+}
+*/
