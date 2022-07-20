@@ -21,7 +21,8 @@
 }
 
 .container {
-    background: var(--clr-white);
+    background: linear-gradient(to right, rgba(173, 216, 230, 0.521), rgba(135, 206, 250, 0.699));
+    /* background: var(--clr-white); */
     padding: 4rem 0;
     border-radius: 5px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
